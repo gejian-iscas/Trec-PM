@@ -1,0 +1,38 @@
+<topics task="2017 TREC Precision Medicine">
+  <topic number="1">
+    <disease>Liposarcoma</disease>
+    <gene>CDK4 Amplification</gene>
+    <demographic>38-year-old male</demographic>
+    <other>GERD</other>
+  </topic>
+  <topic number="4">
+    <disease>Breast cancer</disease>
+    <gene>FGFR1 Amplification, PTEN (Q171)</gene>
+    <demographic>67-year-old female</demographic>
+    <other>Depression, Hypertension, Heart Disease</other>
+  </topic>
+  <topic number="11">
+    <disease>Gastric cancer</disease>
+    <gene>PIK3CA (E545K)</gene>
+    <demographic>54-year-old male</demographic>
+    <other>Depression</other>
+  </topic>
+  <topic number="18">
+    <disease>Pancreatic cancer</disease>
+    <gene>CDK6 Amplification</gene>
+    <demographic>48-year-old male</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="21">
+    <disease>Lung adenocarcinoma</disease>
+    <gene>ALK Fusion</gene>
+    <demographic>64-year-old female</demographic>
+    <other>Emphysema</other>
+  </topic>
+  <topic number="26">
+    <disease>Breast cancer</disease>
+    <gene>NRAS Amplification</gene>
+    <demographic>35-year-old female</demographic>
+    <other>None</other>
+  </topic>
+</topics>

@@ -1,0 +1,38 @@
+<topics task="2017 TREC Precision Medicine">
+  <topic number="3">
+    <disease>Meningioma</disease>
+    <gene>NF2 (K322), AKT1(E17K)</gene>
+    <demographic>45-year-old female</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="8">
+    <disease>Lung cancer</disease>
+    <gene>EML4-ALK Fusion transcript</gene>
+    <demographic>52-year-old male</demographic>
+    <other>Hypertension, Osteoarthritis</other>
+  </topic>
+  <topic number="9">
+    <disease>Gastrointestinal stromal tumor</disease>
+    <gene>KIT Exon 9 (A502_Y503dup)</gene>
+    <demographic>49-year-old female</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="13">
+    <disease>Cholangiocarcinoma</disease>
+    <gene>BRCA2</gene>
+    <demographic>72-year-old male</demographic>
+    <other>Diabetes</other>
+  </topic>
+  <topic number="14">
+    <disease>Cholangiocarcinoma</disease>
+    <gene>IDH1 (R132H)</gene>
+    <demographic>64-year-old male</demographic>
+    <other>Neuropathy</other>
+  </topic>
+  <topic number="16">
+    <disease>Pancreatic cancer</disease>
+    <gene>CDKN2A</gene>
+    <demographic>54-year-old male</demographic>
+    <other>Diabetes, Hypertension</other>
+  </topic>
+</topics>

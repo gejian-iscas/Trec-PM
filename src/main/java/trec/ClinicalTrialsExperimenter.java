@@ -3,6 +3,7 @@ package trec;
 
 import clinicaltrial.ClinicalTrial;
 import clinicaltrial.TrecConfig;
+import model.Gene;
 import org.elasticsearch.action.bulk.BulkProcessor;
 import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.bulk.BulkResponse;
@@ -29,19 +30,19 @@ public class ClinicalTrialsExperimenter {
 //			e.printStackTrace();
 //		}
 		final File cancerSynonymsTemplate = new File(
-				ClinicalTrialsExperimenter.class.getResource("/clinical_trials/cancer-synonyms-ct.json").getFile());
-		final int year = 2017;
+				ClinicalTrialsExperimenter.class.getResource("/clinical_trials/template.json").getFile());
+		final Gene.Field[] expandTo = { Gene.Field.SYMBOL, Gene.Field.SYNONYMS };
 
 		ExperimentsBuilder builder = new ExperimentsBuilder();
 
-		builder.newExperiment().withYear(year).withTemplate(cancerSynonymsTemplate).withWordRemoval();
+		builder.newExperiment().withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
 
 		Experiment experiment = builder.build();
 		experiment.start();
 	}
 
 	static long indexAllClinicalTrials(String dataFolderWithFiles) throws Exception {
-		System.out.println("STARTING INDEXING");
+		System.out.println("开始建立索引...");
 
 		long startTime = System.currentTimeMillis();
 
@@ -52,7 +53,7 @@ public class ClinicalTrialsExperimenter {
 					String fileName = file.toString();
 					if (fileName.endsWith(".xml")) {
 						ClinicalTrial trial = getClinicalTrialFromFile(file.toString());
-						System.out.println("ADDING: " + trial.id);
+						System.out.println("添加文件: " + trial.id);
 
 						try {
 							bulkProcessor.add(new IndexRequest(TrecConfig.ELASTIC_CT_INDEX, TrecConfig.ELASTIC_CT_TYPE, trial.id)
@@ -67,8 +68,8 @@ public class ClinicalTrialsExperimenter {
 
 		long indexingDuration = (System.currentTimeMillis() - startTime);
 
-		System.out.println("INDEXING TIME BULK: " + indexingDuration/1000 + " secs");
-
+		System.out.println("索引耗时: " + indexingDuration/1000 + " 秒");
+		System.out.println("索引建立完毕...");
 		return indexingDuration;
 	}
 

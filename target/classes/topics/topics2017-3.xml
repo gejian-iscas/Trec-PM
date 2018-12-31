@@ -1,0 +1,38 @@
+<topics task="2017 TREC Precision Medicine">
+  <topic number="12">
+    <disease>Colon cancer</disease>
+    <gene>BRAF (V600E)</gene>
+    <demographic>35-year-old male</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="19">
+    <disease>Colorectal cancer</disease>
+    <gene>FGFR1 Amplification</gene>
+    <demographic>35-year-old female</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="23">
+    <disease>Breast cancer</disease>
+    <gene>PTEN Loss</gene>
+    <demographic>54-year-old female</demographic>
+    <other>Congestive Heart Failure</other>
+  </topic>
+  <topic number="24">
+    <disease>Lung cancer</disease>
+    <gene>NTRK1</gene>
+    <demographic>58-year-old female</demographic>
+    <other>Depression, Hypertension, Diabetes</other>
+  </topic>
+  <topic number="27">
+    <disease>Pancreatic adenocarcinoma</disease>
+    <gene>KRAS, TP53</gene>
+    <demographic>49-year-old female</demographic>
+    <other>None</other>
+  </topic>
+  <topic number="30">
+    <disease>Pancreatic adenocarcinoma</disease>
+    <gene>RB1, TP53, KRAS</gene>
+    <demographic>57-year-old female</demographic>
+    <other>None</other>
+  </topic>
+</topics>

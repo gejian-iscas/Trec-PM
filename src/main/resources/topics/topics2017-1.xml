@@ -1,0 +1,38 @@
+<topics task="2017 TREC Precision Medicine">
+  <topic number="6">
+    <disease>Melanoma</disease>
+    <gene>NRAS (Q61K)</gene>
+    <demographic>55-year-old male</demographic>
+    <other>Hypertension</other>
+  </topic>
+  <topic number="7">
+    <disease>Lung cancer</disease>
+    <gene>EGFR (L858R)</gene>
+    <demographic>50-year-old female</demographic>
+    <other>Lupus</other>
+  </topic>
+  <topic number="22">
+    <disease>Lung cancer</disease>
+    <gene>ERBB2 Amplification</gene>
+    <demographic>70-year-old male</demographic>
+    <other>Arthritis</other>
+  </topic>
+  <topic number="25">
+    <disease>Lung adenocarcinoma</disease>
+    <gene>MET Amplification</gene>
+    <demographic>48-year-old male</demographic>
+    <other>Emphysema</other>
+  </topic>
+  <topic number="28">
+    <disease>Pancreatic ductal adenocarcinoma</disease>
+    <gene>ERBB3</gene>
+    <demographic>73-year-old female</demographic>
+    <other>Whipple, FNA</other>
+  </topic>
+  <topic number="29">
+    <disease>Ampullary carcinoma</disease>
+    <gene>KRAS</gene>
+    <demographic>61-year-old male</demographic>
+    <other>None</other>
+  </topic>
+</topics>

@@ -1,10 +1,8 @@
 package trec.experiment;
 
 import clinicaltrial.TrecConfig;
-import query.ElasticSearchQuery;
-import query.Query;
-import query.TemplateQueryDecorator;
-import query.WordRemovalQueryDecorator;
+import model.Gene;
+import query.*;
 
 import java.io.File;
 
@@ -33,8 +31,33 @@ public class ExperimentsBuilder {
 		return this;
 	}
 
-	public ExperimentsBuilder withYear(int year) {
-		buildingExp.setYear(year);
+	public ExperimentsBuilder withDiseaseSynonym() {
+		Query previousDecorator = buildingExp.getDecorator();
+		buildingExp.setDecorator(new DiseaseSynonymQueryDecorator(previousDecorator));
+		return this;
+	}
+
+	public ExperimentsBuilder withGeneSynonym() {
+		Query previousDecorator = buildingExp.getDecorator();
+		buildingExp.setDecorator(new GeneSynonymQueryDecorator(previousDecorator));
+		return this;
+	}
+
+	public ExperimentsBuilder withDiseaseExpander() {
+		Query previousDecorator = buildingExp.getDecorator();
+		buildingExp.setDecorator(new DiseaseExpanderQueryDecorator(previousDecorator));
+		return this;
+	}
+
+	public ExperimentsBuilder withGeneExpansion(Gene.Field[] expandTo) {
+		Query previousDecorator = buildingExp.getDecorator();
+		buildingExp.setDecorator(new GeneExpanderQueryDecorator(expandTo, previousDecorator));
+		return this;
+	}
+
+	public ExperimentsBuilder withDiseaseReplacer() {
+		Query previousDecorator = buildingExp.getDecorator();
+		buildingExp.setDecorator(new DiseaseReplacerQueryDecorator(previousDecorator));
 		return this;
 	}
 

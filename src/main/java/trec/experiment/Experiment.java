@@ -4,8 +4,6 @@ import model.Result;
 import model.ResultList;
 import model.Topic;
 import model.TopicSet;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import query.Query;
 import trec.writer.TrecWriter;
 
@@ -15,25 +13,20 @@ import java.util.List;
 
 public class Experiment extends Thread {
 
-	private static final Logger LOG = LogManager.getLogger();
-
 	private Query decorator;
 
-	private int year;
+	private String index = null;
 
 	private String experimentName = null;
 
 	@Override
 	public void run() {
-		final String name = getExperimentId() + " with decorators " + decorator.getName();
-
-		//LOG.info("Running collection " + name + "...");
 		System.out.println("程序开始执行...");
 
-		File example = new File(Experiment.class.getResource("/topics/topics" + year + ".xml").getPath());
+		File example = new File(Experiment.class.getResource("/topics/topics2017-" + index + ".xml").getPath());
 		TopicSet topicSet = new TopicSet(example);
 
-		File output = new File("results/" + getExperimentId() + ".trec_results");
+		File output = new File("results/output-" + index + ".txt");
 		final String runName = getExperimentName();
 		TrecWriter tw = new TrecWriter(output, runName);
 
@@ -50,19 +43,11 @@ public class Experiment extends Thread {
 
 		tw.write(resultListSet);
 		tw.close();
-		//LOG.info("Finish...");
 		System.out.println("程序执行完毕...");
 	}
 
 	public void setDecorator(Query decorator) {
 		this.decorator = decorator;
-	}
-
-	public String getExperimentId() {
-		if (experimentName != null) {
-			return experimentName.replace(" ", "_");
-		}
-		return String.format("%s_%d_%s", "ct", year, decorator.getName().replace(" ", "_"));
 	}
 
 	public void setExperimentName(String name) {
@@ -77,8 +62,12 @@ public class Experiment extends Thread {
 		return experimentName;
 	}
 
-	public void setYear(int year) {
-		this.year = year;
+	public void setIndex(String index) {
+		this.index = index;
+	}
+
+	public String getIndex() {
+		return this.index;
 	}
 
 	public Query getDecorator() {
