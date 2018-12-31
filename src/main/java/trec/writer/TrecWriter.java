@@ -13,7 +13,7 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 
 public class TrecWriter implements Closeable {
-	private static final String VALID_RUN_NAME_REGEX = "[a-zA-Z0-9]{1,12}";
+	private static final String VALID_RUN_NAME_REGEX = "[a-zA-Z0-9/-]{1,12}";
 	private static final int NUM_FIELDS = 6;
 	private CSVWriter writer;
 	private String runName;

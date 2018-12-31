@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="106370a4-dd34-47cd-94ba-ab55a37d5a9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cache/lexigram.ser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Homo_sapiens.gene_info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topics/topics2017-1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topics/topics2017-2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topics/topics2017-3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topics/topics2017-4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/topics/topics2017-5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/ct_2017_WordRemoval_Template(cancer-synonyms-ct.json)_ElasticSearchQuery.trec_results" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/output-5.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trec/experiment/Experiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trec/experiment/Experiment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/clinical_trials/cancer-synonyms-ct.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/clinical_trials/template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/clinical_trials/cancer-synonyms-ct.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/clinicaltrial/ClinicalTrial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/clinicaltrial/ClinicalTrial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/trec/ClinicalTrialsExperimenter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trec/ClinicalTrialsExperimenter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/trec/ClinicalTrialsExperimenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trec/ClinicalTrialsExperimenter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/trec/experiment/Experiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/trec/experiment/Experiment.class" afterDir="false" />
@@ -45,14 +37,14 @@
         <counts>
           <entry key="JAVA" value="20" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Properties" value="6" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="366" />
+          <entry key="JAVA" value="434" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="2" />
@@ -65,16 +57,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/trec/experiment/Experiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+            <state relative-caret-position="645">
+              <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1446#1447#0" expanded="true" />
                 <element signature="e#1479#1480#0" expanded="true" />
-                <element signature="e#1472#1473#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1527#1528#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+            <state relative-caret-position="155">
+              <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,20 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="285">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,15 +112,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/clinicaltrial/TrecConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/stopword.txt" />
         <option value="$PROJECT_DIR$/src/main/java/clinicaltrial/ClinicalTrial.java" />
         <option value="$PROJECT_DIR$/src/main/java/trec/model/Gene.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/trec/experiment/Experiment.java" />
       </list>
     </option>
@@ -270,7 +246,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546254200584" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546255559146" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -334,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546235676468</updated>
-      <workItem from="1546235684160" duration="10315000" />
+      <workItem from="1546235684160" duration="11421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10315000" />
+    <option name="totallyTimeSpent" value="11421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
@@ -350,7 +326,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1624305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1624305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32919708" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -359,7 +335,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.23576643" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32919708" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919708" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,16 +466,6 @@
     <entry file="file://$PROJECT_DIR$/results/ct_2017_GeneExpander_WordRemoval_Template(cancer-synonyms-ct.json)_ElasticSearchQuery.trec_results">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -513,6 +479,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/topics/topics2017-1.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/output-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55899" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clinicaltrial/ClinicalTrial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -523,15 +494,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/output-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55899" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/results/output-topics2017-1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trec/writer/TrecWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+        <state relative-caret-position="223">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -540,8 +509,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trec/experiment/ExperimentsBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trec/ClinicalTrialsExperimenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -550,16 +529,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trec/experiment/Experiment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        <state relative-caret-position="645">
+          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1446#1447#0" expanded="true" />
             <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
           </folding>
         </state>
       </provider>

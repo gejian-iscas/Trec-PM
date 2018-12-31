@@ -15,18 +15,16 @@ public class Experiment extends Thread {
 
 	private Query decorator;
 
-	private String index = null;
-
 	private String experimentName = null;
 
 	@Override
 	public void run() {
-		System.out.println("程序开始执行...");
+		System.out.println(experimentName + "程序开始执行...");
 
-		File example = new File(Experiment.class.getResource("/topics/topics2017-" + index + ".xml").getPath());
+		File example = new File(Experiment.class.getResource("/topics/" + experimentName + ".xml").getPath());
 		TopicSet topicSet = new TopicSet(example);
 
-		File output = new File("results/output-" + index + ".txt");
+		File output = new File("results/output-" + experimentName + ".txt");
 		final String runName = getExperimentName();
 		TrecWriter tw = new TrecWriter(output, runName);
 
@@ -43,7 +41,7 @@ public class Experiment extends Thread {
 
 		tw.write(resultListSet);
 		tw.close();
-		System.out.println("程序执行完毕...");
+		System.out.println(experimentName + "程序执行完毕...");
 	}
 
 	public void setDecorator(Query decorator) {
@@ -60,14 +58,6 @@ public class Experiment extends Thread {
 		}
 
 		return experimentName;
-	}
-
-	public void setIndex(String index) {
-		this.index = index;
-	}
-
-	public String getIndex() {
-		return this.index;
 	}
 
 	public Query getDecorator() {

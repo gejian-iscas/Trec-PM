@@ -5,8 +5,11 @@ import model.Gene;
 import query.*;
 
 import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ExperimentsBuilder {
+	private Set<Experiment> experiments = new HashSet<>();
 
 	private Experiment buildingExp = null;
 
@@ -14,7 +17,13 @@ public class ExperimentsBuilder {
 	}
 
 	public ExperimentsBuilder newExperiment() {
+		validate();
 		buildingExp = new Experiment();
+		return this;
+	}
+
+	public ExperimentsBuilder withName(String name) {
+		buildingExp.setExperimentName(name);
 		return this;
 	}
 
@@ -61,8 +70,16 @@ public class ExperimentsBuilder {
 		return this;
 	}
 
-	public Experiment build() {
-		return buildingExp;
+	public Set<Experiment> build() {
+		validate();
+		return experiments;
 	}
 
+	private void validate() {
+		if (buildingExp != null) {
+			this.experiments.add(buildingExp);
+			return;
+		}
+
+	}
 }

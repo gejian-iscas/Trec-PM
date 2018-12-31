@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import static org.apache.commons.lang3.StringEscapeUtils.escapeJson;
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
@@ -25,7 +26,7 @@ import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 public class ClinicalTrialsExperimenter {
 	public static void main(String[] args) {
 //		try {
-//			indexAllClinicalTrials("/Users/jian-0526/Desktop/TREC/clinicaltrials_xml");
+//			indexClinicalTrials("/Users/jian-0526/Desktop/TREC/clinicaltrials_xml");
 //		} catch (Exception e) {
 //			e.printStackTrace();
 //		}
@@ -35,13 +36,25 @@ public class ClinicalTrialsExperimenter {
 
 		ExperimentsBuilder builder = new ExperimentsBuilder();
 
-		builder.newExperiment().withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
+		builder.newExperiment().withName("topics2017-1").withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
+		builder.newExperiment().withName("topics2017-2").withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
+		builder.newExperiment().withName("topics2017-3").withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
+		builder.newExperiment().withName("topics2017-4").withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
+		builder.newExperiment().withName("topics2017-5").withTemplate(cancerSynonymsTemplate).withWordRemoval().withGeneExpansion(expandTo);
 
-		Experiment experiment = builder.build();
-		experiment.start();
+		Set<Experiment> experiments = builder.build();
+
+		for (Experiment exp : experiments) {
+			exp.start();
+			try {
+				exp.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
-	static long indexAllClinicalTrials(String dataFolderWithFiles) throws Exception {
+	static long indexClinicalTrials(String dataFolderWithFiles) throws Exception {
 		System.out.println("开始建立索引...");
 
 		long startTime = System.currentTimeMillis();
